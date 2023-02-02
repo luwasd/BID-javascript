@@ -1,4 +1,4 @@
-Number.prototype.isPrime = function () {
+Number.prototype.isPrime = () => { // la funsion de flecha es mucho mas rapida
     for (let i = 2; i <= Math.sqrt(this); i++) { // ahora la variable i solo llega a la raiz cuadrada y al no ser divisible es numero primo
         if (this % i === 0) {
             return false;
@@ -70,4 +70,4 @@ console.log("-----------------------------------------");
 const story = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa nihil repellat nulla laboriosam maxime, quia aliquam ipsam reprehenderit delectus reiciendis molestias assumenda aut fugit tempore laudantium tempora aspernatur? Repellendus consequatur expedita doloribus soluta cupiditate quae fugit! Aliquid, repellat animi, illum molestias maiores, laboriosam vero impedit iusto mollitia optio labore asperiores!";
 const reversed1 = story.split("").reverse().join("");
 const reversedModificado = [...story].reverse().join(""); // metodo diferente con spread
-console.log(reversed1);
+console.log(reversedModificado);
